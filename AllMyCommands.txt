@@ -1,0 +1,19 @@
+git init
+git add 'Section-1.1.txt' 'Section-3.1.txt' 'Section-5.1.txt' 
+rm 'Section 3.1.txt'
+git checkout -- 'Section-3.1.txt'
+git commit -m"I'm commiting the 3 files into the repository Section-1.1.txt, Section-3.1.txt and Section-5.1.txt as stated in step e)"
+git remote add origin "https://github.com/AliShady/Sprint0-Individual-Task-.git"
+git push -f origin master
+touch README.md
+git checkout -b ReadMe
+git add README.md
+git commit -m"Committed file that contains info About the Project Title, Getting Started (explanation of content in repo), Author (my first name & last name & ID), and finally Acknowledgments (book Chacon, Scott, and Ben Straub. Pro Git. Apress, 2014.)"
+git checkout master
+git merge ReadMe
+git add AllMyCommands.txt
+git commit -m"Committed txt file where all my commands where i inserted in the terminal for this sprint is recored as specificed at the beginning of step 4"
+
+extra commands in order to ensure it enters repository
+git push origin master
+
